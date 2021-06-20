@@ -1,5 +1,6 @@
 import {FaEdit} from "react-icons/fa"
 import { useRouter } from 'next/router'
+import styles from "../../../styles/components/home_logged.module.css"
 
 const Logged = () => {
     const router = useRouter()

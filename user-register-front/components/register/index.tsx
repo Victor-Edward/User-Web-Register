@@ -1,3 +1,5 @@
+import styles from "../../styles/components/register.module.css"
+
 
 const UserRegister = () => {
     return(

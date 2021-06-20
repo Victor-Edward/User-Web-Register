@@ -1,4 +1,4 @@
-
+import styles from "../../styles/components/delete_user.module.css"
 
 const DeleteUser = () => {
     return(

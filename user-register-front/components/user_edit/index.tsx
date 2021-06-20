@@ -1,4 +1,4 @@
-
+import styles from "../../styles/components/user_edit.module.css"
 
 const UserEdit = () => {
     return(

@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import styles from "../../../styles/components/home_visitor.module.css"
 
 const Visitor = () => {
     const router = useRouter()
