@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 const Logged = () => {
     const router = useRouter()
-    
+
     return(
         <div>
           <div>
@@ -11,7 +11,7 @@ const Logged = () => {
           </div>
 
           <div>
-            <button onClick={() => router.push("")}><FaEdit/>Editar informações</button>
+            <button onClick={() => router.push("edit")}><FaEdit/>Editar informações</button>
             <button>Logout</button>
           </div>
         </div>
