@@ -1,9 +1,32 @@
-html,
-body {
+:root {
+  --grayLine: #e5e5e5;
+  --lightBlue: #7facc7;
+  --blue: #294b7a;
+  --red: #e63946;
+  --green: #06d6a0;
+  --yellow: #ffd166;
+}
+
+* {
   padding: 0;
   margin: 0;
+  box-sizing: 0;
+}
+
+html,
+body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  border-top: 4vh solid var(--blue);
+  border-bottom: 4vh solid var(--blue);
+
+  display: block;
 }
 
 a {
