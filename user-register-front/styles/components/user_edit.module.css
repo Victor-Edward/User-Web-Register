@@ -1,0 +1,176 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  margin-top: 2em;
+}
+
+.greetings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 0.5em;
+}
+
+.text {
+  font-size: 1.25em;
+  margin-bottom: 0.3em;
+}
+
+.category {
+  text-align: center;
+
+  border-bottom: 2px solid lightgray;
+  border-radius: 10px;
+
+  margin-bottom: 0.5em;
+}
+
+.fieldsContainer {
+  border: 2px solid var(--grayLine);
+  border-radius: 15px;
+
+  padding: 1em 10em;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 13em;
+  height: 3em;
+
+  margin-bottom: 0.3em;
+}
+
+.inputLabel {
+  margin-bottom: 0.25em;
+}
+
+.inputField {
+  border: 2px solid var(--grayLine);
+  border-radius: 10px;
+
+  padding: 0.3em;
+}
+
+.cepSearchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--grayLine);
+
+  border: 2px solid var(--grayLine);
+  border-radius: 10px;
+
+  width: 13em;
+  height: 3em;
+
+  cursor: pointer;
+
+  transition: filter 0.3s;
+}
+
+.cepSearchButton:hover {
+  filter: brightness(0.7);
+}
+
+.pessoalInfoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 11em;
+}
+
+.ColumnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.addressInfoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  margin-top: 1em;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 10px;
+
+  width: 11.5em;
+  height: 2em;
+
+  font-size: 0.95em;
+
+  transition: filter 0.3s;
+
+  cursor: pointer;
+
+  margin-bottom: 0.5em;
+}
+
+.submitButton:hover {
+  filter: brightness(0.85);
+}
+
+.deleteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 10px;
+
+  width: 11.5em;
+  height: 2em;
+
+  font-size: 0.95em;
+
+  transition: filter 0.3s;
+
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  filter: brightness(0.85);
+}
+
+.icon {
+  width: 1em;
+  height: auto;
+
+  margin-right: 0.2em;
+
+  color: lightgray;
+}

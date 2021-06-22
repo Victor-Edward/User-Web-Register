@@ -3,56 +3,98 @@ import styles from "../../styles/components/register.module.css"
 
 const UserRegister = () => {
     return(
-        <div>
-            <p>Para criar uma nova conta, preencha os campos abaixo:</p>
+        <div className={styles.wrapper}>
+            <div className={styles.greetings}>
+                <p className={styles.text}>Para criar uma nova conta, preencha os campos abaixo:</p>
+            </div>
 
-            <form action="" method="post">
-                <label htmlFor="name"><b>Nome</b></label>
-                <input type="text" placeholder="Nome" name="name" id="name" required />
+            <form className={styles.fieldsContainer} action="" method="post">
+                <p className={styles.category}><b>Informação pessoal</b></p>
+                <div className={styles.pessoalInfoContainer}>
+                    <div className={styles.ColumnContainer}>
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="name"><b>Nome</b></label>
+                            <input className={styles.inputField} type="text" placeholder="Nome" name="name" id="name" required />
+                        </div>
 
-                <label htmlFor="email"><b>Email</b></label>
-                <input type="text" placeholder="Email" name="email" id="email" required />
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="email"><b>Email</b></label>
+                            <input className={styles.inputField} type="text" placeholder="Email" name="email" id="email" required />
+                        </div>
 
-                <div>
-                    <p>Endereço</p>
-                    <div>
-                        <label htmlFor="CEP"><b>CEP</b></label>
-                        <input type="text" placeholder="CEP" name="CEP" id="CEP" required />
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="password"><b>Senha</b></label>
+                            <input className={styles.inputField} type="text" placeholder="Senha" name="password" id="password" required />
+                        </div>
+                    </div>
 
-                        <label htmlFor="país"><b>País</b></label>
-                        <input type="text" placeholder="País" name="país" id="país" required />
+                    <div className={styles.ColumnContainer}>
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="CPF"><b>CPF</b></label>
+                            <input className={styles.inputField} type="text" placeholder="CPF" name="CPF" id="CPF" required />
+                        </div>
 
-                        <label htmlFor="UF"><b>Estado</b></label>
-                        <input type="text" placeholder="Estado" name="UF" id="UF" required />
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="PIS"><b>PIS</b></label>
+                            <input className={styles.inputField} type="text" placeholder="PIS" name="PIS" id="PIS" required />
+                        </div>
 
-                        <label htmlFor="municipio"><b>Município</b></label>
-                        <input type="text" placeholder="Município" name="municipio" id="municipio" required />
-
-                        <label htmlFor="rua"><b>Rua</b></label>
-                        <input type="text" placeholder="Rua" name="rua" id="rua" required />
-
-                        <label htmlFor="número"><b>Número</b></label>
-                        <input type="text" placeholder="Número" name="número" id="número" required />
-
-                        <label htmlFor="complemento"><b>Complemento</b></label>
-                        <input type="text" placeholder="Complemento" name="complemento" id="complemento" required />
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="confirm-password"><b>Confirme sua Senha</b></label>
+                            <input className={styles.inputField} type="text" placeholder="Confirme sua Senha" name="confirm-password" id="confirm-password" required />
+                        </div>
                     </div>
                 </div>
-                
 
-                <label htmlFor="CPF"><b>CPF</b></label>
-                <input type="text" placeholder="CPF" name="CPF" id="CPF" required />
-                
-                <label htmlFor="PIS"><b>PIS</b></label>
-                <input type="text" placeholder="PIS" name="PIS" id="PIS" required />
-                
-                <label htmlFor="password"><b>Senha</b></label>
-                <input type="text" placeholder="Senha" name="password" id="password" required />
-                
-                <label htmlFor="confirm-password"><b>Confirme sua Senha</b></label>
-                <input type="text" placeholder="Confirme sua Senha" name="confirm-password" id="confirm-password" required />
+                <p className={styles.category}><b>Endereço</b></p>
+                <div className={styles.addressInfoContainer}>
+                    <div className={styles.ColumnContainer}>
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="CEP"><b>CEP</b></label>
+                            <input className={styles.inputField} type="text" placeholder="CEP" name="CEP" id="CEP" required />
+                        </div>
 
-                <input type="submit" value="Cadastrar" />
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="país"><b>País</b></label>
+                            <input className={styles.inputField} type="text" placeholder="País" name="país" id="país" required />
+                        </div>
+                        
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="municipio"><b>Município</b></label>
+                            <input className={styles.inputField} type="text" placeholder="Município" name="municipio" id="municipio" required />
+                        </div>
+
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="número"><b>Número</b></label>
+                            <input className={styles.inputField} type="text" placeholder="Número" name="número" id="número" required />
+                        </div>
+                    </div>
+
+                    <div className={styles.ColumnContainer}>
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="CEP"><b>Pesquisar CEP</b></label>
+                            <button className={styles.cepSearchButton} id="CEP">Pesquisar CEP</button>
+                        </div>
+                        
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="UF"><b>Estado</b></label>
+                            <input className={styles.inputField} type="text" placeholder="Estado" name="UF" id="UF" required />
+                        </div>
+                        
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="rua"><b>Rua</b></label>
+                            <input className={styles.inputField} type="text" placeholder="Rua" name="rua" id="rua" required />
+                        </div>
+
+                        <div className={styles.inputContainer}>
+                            <label className={styles.inputLabel} htmlFor="complemento"><b>Complemento</b></label>
+                            <input className={styles.inputField} type="text" placeholder="Complemento" name="complemento" id="complemento" required />
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.buttonContainer}>
+                    <input className={styles.submitButton} type="submit" value="Cadastrar" />
+                </div>
             </form>
         </div>
     )

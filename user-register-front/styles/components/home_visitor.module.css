@@ -1,0 +1,141 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 20%;
+  height: 22em;
+
+  border: 2px solid var(--grayLine);
+  border-radius: 10px;
+}
+
+.greetings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 0.5em;
+}
+
+.text {
+  font-size: 1.25em;
+  margin-bottom: 0.3em;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-bottom: 0.7em;
+
+  width: 13em;
+  height: 3em;
+
+  border: 2px solid var(--grayLine);
+  border-radius: 10px;
+}
+
+.inputLabel {
+  margin-bottom: 0.25em;
+}
+
+.inputField {
+  outline: none;
+  border: none;
+
+  height: 100%;
+  width: 70%;
+
+  font-size: 0.85em;
+}
+
+.selectorContainer {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 0.75em;
+}
+
+.selector {
+  border: 2px solid var(--grayLine);
+  border-radius: 10px;
+
+  outline: none;
+}
+
+.icon {
+  width: 1em;
+  height: auto;
+
+  margin-right: 0.2em;
+
+  color: lightgray;
+}
+
+.passwordIcon {
+  width: 1em;
+  height: auto;
+
+  color: lightgray;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 5em;
+  width: 100%;
+}
+
+.loginButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 10px;
+
+  width: 11.5em;
+  height: 2em;
+
+  font-size: 0.95em;
+
+  transition: filter 0.3s;
+
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  filter: brightness(0.85);
+}
+
+.registerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--lightBlue);
+  border: 1px solid var(--lightBlue);
+  border-radius: 10px;
+
+  width: 11.5em;
+  height: 2em;
+
+  font-size: 0.95em;
+
+  transition: filter 0.3s;
+
+  cursor: pointer;
+}
+
+.registerButton:hover {
+  filter: brightness(0.85);
+}
