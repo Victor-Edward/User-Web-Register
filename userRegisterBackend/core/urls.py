@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from user_profile.urls import router as main_router
 from .router import move_to_api
+from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", move_to_api),
     path("api/", include(main_router.urls)),
+    path("api-token-auth/", obtain_jwt_token),
 ]
